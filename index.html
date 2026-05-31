@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Certifications</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header>
+    <h1>Certifications</h1>
+    <p>Professional certifications and achievements &middot; <span id="cert-count">0</span> รายการ</p>
+  </header>
+
+  <main>
+    <div class="cert-grid" id="cert-grid"></div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <iframe id="pdf-viewer" title="PDF Viewer"></iframe>
+    </div>
+  </div>
+
+  <template id="card-template">
+    <div class="cert-card">
+      <div class="card-preview">
+        <svg class="pdf-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="8" y="4" width="32" height="40" rx="4" fill="#fff" stroke="#dc2626" stroke-width="2"/>
+          <rect x="12" y="8" width="24" height="2" rx="1" fill="#e2e8f0"/>
+          <rect x="12" y="13" width="20" height="2" rx="1" fill="#e2e8f0"/>
+          <rect x="12" y="18" width="22" height="2" rx="1" fill="#e2e8f0"/>
+          <text x="24" y="36" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">PDF</text>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h3 class="card-title"></h3>
+        <span class="badge">PDF</span>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
