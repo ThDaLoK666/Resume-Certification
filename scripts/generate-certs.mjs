@@ -3,8 +3,8 @@ import { resolve, parse } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = resolve(fileURLToPath(import.meta.url), '..')
-const certDir = resolve(__dirname, '..', 'Certification')
-const output = resolve(__dirname, '..', 'certifications.json')
+const certDir = resolve(__dirname, '..', 'public', 'Certification')
+const output = resolve(__dirname, '..', 'public', 'certifications.json')
 
 const files = readdirSync(certDir)
   .filter(f => f.toLowerCase().endsWith('.pdf'))
